@@ -1,0 +1,93 @@
+body {
+	background: black;
+}
+
+a {
+	text-decoration: none;
+	color: #fff;
+}
+
+.template {
+	display: none;
+}
+
+.page {
+	width: 1185px;
+	height: 711px;
+	position: absolute;
+	transform: translate(-50%, -50%);
+	top: 50%;
+	left: 50%;
+}
+
+.main-content {
+	background-color: #3a3a3c;
+	height: 656px;
+	overflow: auto;
+	box-sizing: border-box;
+	width: 100%;
+}
+
+.main-content .wave,
+.main-content .boat {
+	position: absolute;
+}
+
+.main-content .wave {
+	background-image: url(../img/Waves.png);
+	width: 100%;
+	height: 100%;
+	background-size: 1190px;
+	background-repeat: no-repeat;
+	background-position: 0 270px;
+}
+
+.main-content .boat {
+	background-image: url(../img/BananaBoat.png);
+	width: 140px;
+	height: 140px;
+	background-size: 108px;
+	background-repeat: no-repeat;
+	left: 776px;
+	top: 356px;
+}
+
+menu {
+	display: block;
+	height: 56px;
+}
+
+menu ul {
+	display: block;
+}
+
+menu li {
+	color: white;
+	display: inline-block;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 20px;
+	line-height: 58px;
+	box-sizing: border-box;
+	margin: 0 80px;
+	letter-spacing: 2px;
+	font-weight: bold;
+	cursor: pointer;
+}
+
+menu li a {
+	cursor: pointer;
+}
+
+menu li a:hover {
+	color: #eee238;
+}
+
+menu li:first-child {
+	margin-left: 4px;
+	margin-right: 154px;
+}
+
+menu li:last-child {
+	margin-right: 0;
+	margin-left: 95px;
+}

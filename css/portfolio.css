@@ -1,0 +1,50 @@
+.container {
+	box-sizing: border-box;
+	margin-left: 289px;
+	padding-top: 20px;
+	padding-bottom: 40px;
+	width: 864px;
+	font-size: 0;
+}
+
+.img-large {
+	width: 435px;
+	height: 577px;
+	display: inline-block;
+	background-size: cover;
+	background-position: 50% 99%;
+}
+
+.details {
+	width: 200px;
+	height: 200px;
+	display: inline-block;
+	vertical-align: top;
+	margin-left: 35px;
+	width: 390px;
+}
+
+.img {
+	width: 195px;
+	height: 290px;
+	display: inline-block;
+	background-size: cover;
+	background-position: 50% 74%;
+}
+
+.img:first-child:nth-last-child(2) {
+	width: 390px;
+}
+
+.text {
+	width: 99%;
+	font-size: 17px;
+	font-family: 'Bebas Neue', sans-serif;
+	margin-top: 16px;
+	line-height: 21px;
+	color: #858689;
+}
+
+.main-content {
+	padding-top: 28px;
+}

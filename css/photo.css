@@ -1,0 +1,28 @@
+.img {
+	background-size: cover;
+	width: 100%;
+	height: 100%;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: center;
+}
+
+.container {
+	width: 260px;
+	height: 181px;
+	margin: 11px 11px;
+	background-color: #97999c;
+	box-sizing: border-box;
+	display: inline-block;
+	padding: 10px;
+}
+
+.main-content {
+	padding: 27px 0px 26px 26px;
+}
+
+.portrait {
+	width: 174px;
+	height: 248px;
+	margin: 30px 43px 30px 11px;
+}
