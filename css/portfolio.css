@@ -45,6 +45,9 @@
 	color: #858689;
 }
 
+.text span{
+	font-family: 'Helvetica Neue', sans-serif;
+}
 .main-content {
 	padding-top: 28px;
 }
