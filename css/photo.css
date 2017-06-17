@@ -15,13 +15,14 @@
 	box-sizing: border-box;
 	display: inline-block;
 	padding: 10px;
+	cursor: pointer;
 }
 
-.main-content {
+.main-content.photography {
 	padding: 27px 0px 26px 26px;
 }
 
-.portrait {
+.main-content.photography .portrait {
 	width: 174px;
 	height: 248px;
 	margin: 30px 43px 30px 11px;

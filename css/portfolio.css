@@ -1,4 +1,4 @@
-.container {
+.main-content.portfolio .container {
 	box-sizing: border-box;
 	margin-left: 289px;
 	padding-top: 20px;
@@ -7,7 +7,7 @@
 	font-size: 0;
 }
 
-.img-large {
+.main-content.portfolio .img-large {
 	width: 435px;
 	height: 577px;
 	display: inline-block;
@@ -15,7 +15,7 @@
 	background-position: 50% 99%;
 }
 
-.details {
+.main-content.portfolio .details {
 	width: 200px;
 	height: 200px;
 	display: inline-block;
@@ -24,7 +24,7 @@
 	width: 390px;
 }
 
-.img {
+.main-content.portfolio .img {
 	width: 195px;
 	height: 290px;
 	display: inline-block;
@@ -32,22 +32,43 @@
 	background-position: 50% 74%;
 }
 
-.img:first-child:nth-last-child(2) {
+.main-content.portfolio .img:first-child:nth-last-child(2) {
 	width: 390px;
 }
 
-.text {
-	width: 99%;
-	font-size: 17px;
-	font-family: 'Bebas Neue', sans-serif;
+.main-content.client-list .text,
+.main-content.portfolio .text {
+	width: 391px;
+	font-size: 14px;
+	font-family: 'Rajdhani', sans-serif;
 	margin-top: 16px;
 	line-height: 21px;
 	color: #858689;
+	letter-spacing: 1px;
+	box-sizing: border-box;
 }
 
-.text span{
-	font-family: 'Helvetica Neue', sans-serif;
+.main-content.client-list .text span:nth-child(2),
+.main-content.portfolio .text span:nth-child(2) {
+	letter-spacing: 0.5px;
 }
-.main-content {
+
+.main-content.client-list .text p,
+.main-content.portfolio .text p {
+	margin-top: 20px;
+}
+
+.main-content.client-list .text span,
+.main-content.portfolio .text span {
+	display: block;
+	font-weight: 500;
+}
+
+.main-content.client-list .text span em,
+.main-content.portfolio .text span em {
+	color: #ffce00;
+}
+
+.main-content.portfolio {
 	padding-top: 28px;
 }

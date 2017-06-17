@@ -1,24 +1,27 @@
 .container {
 	box-sizing: border-box;
-	margin-left: 264px;
+	margin-left: 289px;
 }
 
 .container .col {
-	width: 406px;
+	width: 446px;
 	display: inline-block;
 	vertical-align: top;
+	padding-left: 0px;
 }
 
-.container .col .image {
-	width: 444px;
-	height: 280px;
-	margin: 10px 10px 17px;
+.main-content.client-list .container .col .image {
+	/* width: 444px; */
+	/* height: 280px; */
+	margin: 10px 0px 17px 20px;
 	background-color: green;
 	background-position: center;
 	background-size: cover;
+	width: 390px;
+	height: 290px;
 }
 
-.container .logo {
+.main-content.client-list .container .logo {
 	width: 400px;
 	height: 400px;
 	background-color: white;
@@ -27,17 +30,23 @@
 	background-position: center;
 	background-repeat: no-repeat;
 	background-size: 91%;
+	width: 435px;
+	height: 577px;
+}
+.main-content.client-list .container .text {
+	padding-left: 20px;
+	width: 411px;
 }
 
-.container .text {
+/*.main-content.client-list .container .text {
 	color: #fff;
 	padding-top: 4px;
-	font-family: 'helvetica neue', sans-serif;
+	font-family: 'Rajdhani', sans-serif;
 	line-height: 25px;
 	font-size: 15px;
 }
 
-.container .text strong {
+.main-content.client-list .container .text strong {
 	font-family: 'Bebas Neue', sans-serif;
 	color: yellow;
 	font-size: 32px;
@@ -46,19 +55,26 @@
 	line-height: 34px;
 }
 
-.container .text em {
+.main-content.client-list .container .text em {
 	font-family: 'Bebas Neue', sans-serif;
 	font-size: 19px;
 	letter-spacing: 1px;
 	margin-left: 17px;
-}
+}*/
 
-.img-container.large {
+.main-content.client-list .img-container.large {
 	float: left;
 	width: 832px;
 	height: 388px;
 }
 
-.client {
-	margin-bottom: 70px;
+.main-content.client-list .client {
+	/* margin-bottom: 70px; */
 }
+
+.logos .img {
+	background-size: contain;
+	background-color: #fff;
+}
+
+.main-content.client-list .client-images {padding-left: 28px;}
