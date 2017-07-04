@@ -1,0 +1,33 @@
+.intro .container {
+	display: block;
+	padding-top: 1px;
+	margin-left: 281px;
+	padding-right: 88px;
+}
+
+.intro .container h2 {
+	color: #ffce00;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 71px;
+	margin-top: 28px;
+	display: block;
+	position: relative;
+	letter-spacing: 3px;
+}
+
+.intro .container h3 {
+	color: #ffce00;
+	font-size: 27px;
+	font-family: 'Bebas Neue', sans-serif;
+	letter-spacing: 2.8px;
+	margin-bottom: 12px;
+}
+
+.intro .container p {
+	font-family: 'Rajdhani', sans-serif;
+	color: #8e8e84;
+	font-size: 18px;
+	font-weight: 500;
+	line-height: 27px;
+	letter-spacing: 1.25px;
+}

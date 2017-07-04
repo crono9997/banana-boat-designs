@@ -3,13 +3,25 @@
 <head>
 	<title>Banana Boat Designs</title>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/meyer-reset/2.0/reset.min.css">
-	<link href="https://fonts.googleapis.com/css?family=Rajdhani:400,500" rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css?family=Rajdhani:400,500,600,700" rel="stylesheet">
 	<link rel="stylesheet" type="text/css" href="css/base.css">
 	<link rel="stylesheet" type="text/css" href="css/portfolio.css">
 	<link rel="stylesheet" type="text/css" href="css/client-list.css">
 	<link rel="stylesheet" type="text/css" href="css/photo.css">
+	<link rel="stylesheet" type="text/css" href="css/intro.css">
+	<link rel="stylesheet" type="text/css" href="css/contact.css">
 </head>
 <body>
+	<div style="    background-image: url(img/contact.png);
+    position: absolute;
+    width: 100vw;
+    height: 100vh;
+    /* z-index: 1; */
+    background-size: 1659px;
+    background-repeat: no-repeat;
+    opacity: 0.6;
+    background-position: -199px -239px;
+     display: none; "></div>
 	<div class="lightbox">
 		<img src="" />
 	</div>
@@ -19,8 +31,9 @@
 				<li><a href="#home">Home</a></li>
 				<li><a href="#intro">Introduction</a></li>
 				<li><a href="#portfolio">Portfolio</a></li>
-				<li><a href="#photography">Photography</a></li>
 				<li><a href="#client-list">Client List</a></li>
+				<li><a href="#photography">Photography</a></li>
+				<li><a href="#contact">Contact</a></li>
 			</ul>
 		</menu>
 		<div class="full-container">
@@ -30,6 +43,11 @@
 			</div>
 			<div class="main-content intro" id="intro">
 				<div class="wave"></div>
+				<div class="container">
+					<h2>Hello.</h2>
+					<h3>Welcome to Bananaboat Design</h3>
+					<p>Banana Boat holds a very special meaning to me. Basically it serves as a metaphor for making connections. I am also connected to every project of mine, employer, client, family member and friend. It is not only about creativity or making things look aesthetically appealing. Every project opens up a new subject to explore, to research and to think outside the box.<br />It positively effects every aspect of my work and personal life. It enables me to enjoy my artistic side that results in professional fulfillment.</p>
+				</div>
 			</div>
 			<div class="main-content portfolio" id="portfolio">
 				<div class="container">
@@ -126,8 +144,8 @@
 							<div class="logo" style="background-image: url(img/client-list/y_PD.png);"></div>
 						</div>
 						<div class="col">
-							<a href="../banana-boat-designs/pinecrest/index.html">
-								<div class="image" style="background-image: url(img/client-list/SR_A_T.png);"></div>
+							<a href="http://pinecrestdiner.com">
+								<div class="image" style="background-image: url(img/client-list/PD_A_T.png);"></div>
 							</a>
 							<div class="text">
 								<span>PROJECT: <em>Pinecrest Diner</em> San Francisco, California </span>
@@ -245,7 +263,38 @@
 				<div class="img-container portrait"><div class="img" style="background-image: url(img/photography/W2_T.jpg);"></div></div>
 				<div class="img-container portrait"><div class="img" style="background-image: url(img/photography/W4_T.jpg);"></div></div>
 			</div>
-			
+			<div class="main-content contact" id="contact">
+				<div class="wave"></div>
+				<div class="container">
+					<h2>Contact</h2>
+					<div id="alert"></div>
+					<form class="form">
+						<div class="row">
+							<span class="field"><label>name</label><input class="req" type="text" name="name"></span>
+							<span class="field"><label>phone</label><input class="req" type="text" name="phone"></span>
+						</div>
+						<div class="row">
+							<span class="field"><label>subject</label><input class="req" type="text" name="subject"></span>
+							<span class="field"><label>email</label><input class="req" type="text" name="email"></span>
+						</div>
+						<div class="row">
+							<span class="field"><label>message</label><textarea class="req" name="message" rows="4" cols="50"></textarea></span>
+							<input type="hidden" name="toEmail" value="yulianny.yenny@gmail.com">
+						</div>
+						<div class="footer">
+							<button id="submit">submit</button>
+							<span>Thank You for visiting my site</span>
+							<span class="icons">
+								<a href="mailto:yulianny.yenny@gmail.com"></a>
+								<a href="https://www.instagram.com/yulianny_f16/?hl=en"></a>
+								<a href="https://www.linkedin.com/in/yenny-y-79584b132/"></a>
+								<a href="https://github.com/yyulianny"></a>
+							</span>
+						</div>
+					</form>
+					<a class="resume" href="https://drive.google.com/file/d/0B1aOECant-3TOHhEOHZRTk5valE/view">Check out my Resume here</a>
+				</div>
+			</div>
 		</div>
 	</div>
 
@@ -253,6 +302,7 @@
 	  src="https://code.jquery.com/jquery-3.2.1.min.js"
 	  integrity="sha256-hwg4gsxgFZhOsEEamdOYGBf13FyQuiTwlAQgxVSNgt4="
 	  crossorigin="anonymous"></script>
+	  <script src="https://cdnjs.cloudflare.com/ajax/libs/underscore.js/1.8.3/underscore-min.js"></script>
 	<script type="text/javascript">
 		var $lightbox = $('.lightbox');
 		var $lightboxImg = $lightbox.find('img');
@@ -267,6 +317,47 @@
 			$lightboxImg.attr('src', backgroundImage);
 			$lightbox.fadeIn();
 		});
+
+		var $mainContent = $('.main-content');
+		var $menuItems = $('menu li');
+
+		$('.full-container').scroll(_.throttle(function(e) {
+			var index = -1;
+    		$mainContent.each(function(){
+    			console.log(index, $(this).offset().top)
+    			if ($(this).offset().top > 64) {
+    				return false;
+    			}
+    			index++;
+    		});
+
+    		$menuItems.removeClass('active');
+    		$menuItems.eq(index).addClass('active');
+		}, 100));
+
+		$('#submit').click(function(e){
+			e.preventDefault();
+			$('#alert').html('');
+			var $emptyFields = $('form .req').filter(function() {
+				return $(this).val() == ''
+			});
+			if ($emptyFields.length) {
+				var name = $emptyFields.first().attr('name');
+				$('#alert').html(name.charAt(0).toUpperCase() + name.substr(1) + ' is required.');
+				return;
+			}
+
+			$.ajax({
+				url: 'http://localhost:3000/email',
+				method: 'POST',
+				data: $('form').serialize(),
+				success: function(r){
+					console.log(r);
+					$('#alert').html('Your message has been sent. Thanks for reaching out.');
+					$('.form input, .form textarea').val('');
+				}
+			});	
+		})
 
 	</script>
 </body>

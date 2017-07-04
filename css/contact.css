@@ -1,0 +1,124 @@
+.contact .container {
+	margin-left: 280px;
+	padding-top: 10px;
+	position: relative;
+	height: 656px;
+}
+
+.contact .container .form {
+	border: 1px dashed #ffce00;
+	margin-right: 32px;
+	box-sizing: border-box;
+	padding: 17px;
+}
+
+.contact .container .row {
+	box-sizing: border-box;
+	background-color: #6d6e71;
+	margin-bottom: 17px;
+	border: 1px dashed #ffce00;
+}
+
+.contact .container .field {
+}
+
+.contact .container label {
+	width: 111px;
+	display: inline-block;
+	color: #fff;
+	font-family: 'Rajdhani', sans-serif;
+	text-align: right;
+	box-sizing: border-box;
+	padding-right: 14px;
+	font-size: 21px;
+	line-height: 31px;
+	vertical-align: top;
+}
+
+.contact .container input {
+	box-sizing: border-box;
+	font-size: 21px;
+	width: 304px;
+	background-color: #58585a;
+	border: none;
+	padding: 3px 10px;
+	color: #fff;
+}
+
+.contact .container h2 {
+	color: #ffce00;
+	font-family: 'Bebas Neue', sans-serif;
+	font-size: 71px;
+	margin-top: 28px;
+	display: inline-block;
+	position: relative;
+	letter-spacing: 3px;
+}
+
+.contact .container textarea {
+	box-sizing: border-box;
+	font-size: 21px;
+	width: 724px;
+	height: 152px;
+	background-color: #58585a;
+	border: none;
+	padding: 3px 10px;
+	color: #fff;
+}
+
+.contact .footer {
+	color: #fff;
+	font-size: 17px;
+	font-family: 'Rajdhani', sans-serif;
+	text-transform: uppercase;
+	letter-spacing: 0.6px;
+	position: relative;
+}
+
+.contact .icons {
+	/* background-color: green; */
+	/* width: 220px; */
+	height: 30px;
+	position: absolute;
+	display: inline-block;
+	vertical-align: top;
+	right: 0;
+	vertical-align: top;
+}
+.contact .icons:before {
+	content: '\00a9 2017';
+	vertical-align: top;
+	position: relative;
+	top: 9px;
+}
+
+.contact .icons a {width: 30px;height: 30px;/* background-color: red; */display: inline-block;background-size: contain;background-position: center;background-repeat: no-repeat;}
+
+.contact .icons a:nth-child(1) { background-image: url(../img/icons/mail.png); }
+.contact .icons a:nth-child(2) { background-image: url(../img/icons/Instagram.png); }
+.contact .icons a:nth-child(3) { background-image: url(../img/icons/linkedin.png); }
+.contact .icons a:nth-child(4) { background-image: url(../img/icons/github.png); }
+
+.contact button {
+	box-sizing: border-box;
+	background-color: #6d6e71;
+	margin-right: 16px;
+	border: 1px dashed #ffce00;
+	color: #ffce00;
+	padding: 1px 14px 5px 38px;
+	font-size: 17px;
+	font-weight: 500;
+	cursor: pointer;
+}
+
+#alert {
+	display: inline-block;
+	width: 660px;
+	/* background-color: red; */
+	text-align: center;
+	color: #fff;
+	font-family: 'Rajdhani', sans-serif;
+}
+
+.resume {color: #ffce00;font-family: 'Bebas Neue', sans-serif;font-size: 24px;margin-top: 14px;display: inline-block;position: relative;letter-spacing: 1px;}
+

@@ -2,9 +2,26 @@
 	box-sizing: border-box;
 	margin-left: 289px;
 	padding-top: 20px;
-	padding-bottom: 40px;
+	padding-bottom: 60px;
 	width: 864px;
 	font-size: 0;
+	position: relative;
+	/* padding-bottom: 20px; */
+	/* margin-bottom: 20px; */
+	/* border-bottom: solid 20px black; */
+	/* margin-left: 0; */
+	/* padding-left: 280px; */
+	/* width: 30px; */
+}
+.main-content.portfolio .container:after {
+	content: '';
+	display: block;
+	position: absolute;
+	height: 20px;
+	width: 1185px;
+	background-color: #000;
+	left: -289px;
+	bottom: 10px;
 }
 
 .main-content.portfolio .img-large {

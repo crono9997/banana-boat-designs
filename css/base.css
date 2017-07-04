@@ -27,6 +27,7 @@ a {
 	box-sizing: border-box;
 	width: 100%;
 	/* display: inline-block; */
+	/* position: relative; */
 }
 
 .main-content.intro,
@@ -80,7 +81,7 @@ menu li {
 	font-size: 20px;
 	line-height: 58px;
 	box-sizing: border-box;
-	margin: 0 80px;
+	margin: 0 54px;
 	letter-spacing: 2px;
 	font-weight: bold;
 	cursor: pointer;
@@ -88,20 +89,22 @@ menu li {
 
 menu li a {
 	cursor: pointer;
+	transition: color 0.2s;
 }
 
+menu li.active a,
 menu li a:hover {
-	color: #eee238;
+	color: #ffce00;
 }
 
 menu li:first-child {
 	margin-left: 4px;
-	margin-right: 154px;
+	margin-right: 178px;
 }
 
 menu li:last-child {
 	margin-right: 0;
-	margin-left: 94px;
+	margin-left: 47px;
 }
 
 .lightbox {
