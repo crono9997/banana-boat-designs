@@ -47,6 +47,7 @@ a {
 	height: 656px;
 	overflow: auto;
 	position: relative;
+	overflow-x: hidden;
 }
 
 .main-content .waves,
