@@ -12,16 +12,6 @@
 	<link rel="stylesheet" type="text/css" href="css/contact.css">
 </head>
 <body>
-	<div style="    background-image: url(img/contact.png);
-    position: absolute;
-    width: 100vw;
-    height: 100vh;
-    /* z-index: 1; */
-    background-size: 1659px;
-    background-repeat: no-repeat;
-    opacity: 0.6;
-    background-position: -199px -239px;
-     display: none; "></div>
 	<div class="lightbox">
 		<img src="" />
 	</div>
@@ -29,7 +19,7 @@
 		<menu>
 			<ul>
 				<li><a href="#home">Home</a></li>
-				<li><a href="#intro">Introduction</a></li>
+				<!-- <li><a href="#intro">Introduction</a></li> -->
 				<li><a href="#portfolio">Portfolio</a></li>
 				<li><a href="#client-list">Client List</a></li>
 				<li><a href="#photography">Photography</a></li>
@@ -38,7 +28,17 @@
 		</menu>
 		<div class="full-container">
 			<div class="main-content home" id="home">
-				<div class="wave"></div>
+				<!-- <div class="wave"></div> -->
+				<div class="waves">
+					<div class="wave wave-1"></div>
+					<div class="wave wave-2"></div>
+					<div class="wave wave-3"></div>
+					<div class="wave wave-4"></div>
+					<div class="wave wave-5"></div>
+					<div class="wave wave-6"></div>
+					<div class="wave wave-7"></div>
+					<div class="wave wave-8"></div>
+				</div>
 				<div class="boat"></div>
 			</div>
 			<div class="main-content intro" id="intro">
@@ -46,7 +46,7 @@
 				<div class="container">
 					<h2>Hello.</h2>
 					<h3>Welcome to Bananaboat Design</h3>
-					<p>Banana Boat holds a very special meaning to me. Basically it serves as a metaphor for making connections. I am also connected to every project of mine, employer, client, family member and friend. It is not only about creativity or making things look aesthetically appealing. Every project opens up a new subject to explore, to research and to think outside the box.<br />It positively effects every aspect of my work and personal life. It enables me to enjoy my artistic side that results in professional fulfillment.</p>
+					<p>Banana Boat holds a very special meaning to me. Basically it serves as a metaphor for making connections. I am also connected to every project of mine, employer, client, family member and friend. It is not only about creativity or making things look aesthetically appealing. Every project opens up a new subject to explore, to research and to think outside the box. It positively effects every aspect of my work and personal life.<br />It enables me to enjoy my artistic side that results in professional fulfillment.</p>
 				</div>
 			</div>
 			<div class="main-content portfolio" id="portfolio">
@@ -318,13 +318,14 @@
 			$lightbox.fadeIn();
 		});
 
-		var $mainContent = $('.main-content');
+		var $mainContent = $('.main-content:not(.intro)');
 		var $menuItems = $('menu li');
 
 		$('.full-container').scroll(_.throttle(function(e) {
 			var index = -1;
     		$mainContent.each(function(){
-    			if ($(this).offset().top > 64) {
+    			console.log($(this).offset().top);
+    			if ($(this).offset().top > 140) {
     				return false;
     			}
     			index++;
