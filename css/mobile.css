@@ -2,7 +2,7 @@
 	.full-container {
 		height: auto;
 		margin-top: 160px;
-		overflow: visible;
+		overflow: hidden;
 	}
 
 	.main-content {
@@ -148,12 +148,7 @@
 		line-height: 29px;
 	}
 
-	.main-content .waves {
-
-		/* left: -540px; */
-		overflow: visible;
-		top: 60px;
-	}
+	.main-content .waves {/* left: -540px; */overflow: visible;top: -100px;position: absolute;}
 
 	.main-content .wave {
 		left: -1500px;
@@ -166,10 +161,13 @@
 
 	.main-content .boat {
 		left: 90px;
+		position: absolute;
+		top: 230px;
 	}
 
 	body {
 		background: #3a3a3c;
+		/* overflow: hidden; */
 	}
 
 	.main-content.home {
@@ -181,14 +179,5 @@
 		z-index: 0;
 		height: auto;
 	}
-
-	.main-content .wave-1 { animation: none; }
-	.main-content .wave-2 { animation: none; }
-	.main-content .wave-3 { animation: none; }
-	.main-content .wave-4 { animation: none; }
-	.main-content .wave-5 { animation: none; }
-	.main-content .wave-6 { animation: none; }
-	.main-content .wave-7 { animation: none; }
-	.main-content .wave-8 { animation: none; }
 
 }
