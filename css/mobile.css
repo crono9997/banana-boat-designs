@@ -182,4 +182,13 @@
 		height: auto;
 	}
 
+	.main-content .wave-1 { animation: none; }
+	.main-content .wave-2 { animation: none; }
+	.main-content .wave-3 { animation: none; }
+	.main-content .wave-4 { animation: none; }
+	.main-content .wave-5 { animation: none; }
+	.main-content .wave-6 { animation: none; }
+	.main-content .wave-7 { animation: none; }
+	.main-content .wave-8 { animation: none; }
+
 }

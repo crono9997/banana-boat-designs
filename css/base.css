@@ -85,7 +85,7 @@ a {
 	position: fixed;
 }
 
-.main-content .wave {width: 500%;height: 100%;background-repeat-y: no-repeat;/* background-size: 1400px; */background-position: -21px 268px;/* transform: translate3d(0, 0, 0); *//* will-change: transform; */left: -200%;}
+.main-content .wave {width: 500%;height: 100%;background-repeat-y: no-repeat;background-repeat: repeat-x;/* background-size: 1400px; */background-position: -21px 268px;/* transform: translate3d(0, 0, 0); *//* will-change: transform; */left: -200%;}
 
 .main-content .wave-1 {background-image: url(../img/waves/wave_1.png);background-position: 149px 572px;/* background-repeat: no-repeat; */}
 .main-content .wave-2 {background-image: url(../img/waves/wave_2.png);background-position: -191px 468px;}
