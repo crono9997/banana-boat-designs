@@ -30,6 +30,7 @@
 	display: inline-block;
 	background-size: cover;
 	background-position: 50% 99%;
+	max-width: calc(100% - 20px);
 }
 
 .main-content.portfolio .details {
@@ -63,6 +64,7 @@
 	color: #858689;
 	letter-spacing: 1px;
 	box-sizing: border-box;
+	text-align: left;
 }
 
 .main-content.client-list .text span:nth-child(2),
