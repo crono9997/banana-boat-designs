@@ -140,7 +140,7 @@
 	menu {
 		height: initial;
 		position: relative;
-		/* width: 120px; */
+		width: 200px;
 		left: 10px;
 		top: 10px;
 	}
