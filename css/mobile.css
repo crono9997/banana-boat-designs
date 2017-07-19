@@ -1,8 +1,8 @@
 @media screen and (max-width:648px) {
 	.full-container {
 		height: auto;
-		margin-top: 160px;
-		overflow: hidden;
+		margin-top: -10px;
+		overflow: initial;
 	}
 
 	.main-content {
@@ -10,11 +10,11 @@
 
 	.page {
 		width: 100vw;
-		height: auto;
+		height: initial;
 		position: relative;
 		transform: none;
-		left: 0;
-		top: 0;
+		left: initial;
+		top: initial;
 	}
 
 	.main-content.home .container {
@@ -136,11 +136,11 @@
 	}
 
 	menu {
-		height: auto;
-		position: absolute;
+		height: initial;
+		position: relative;
 		width: 100px;
 		left: 10px;
-		top: -153px;
+		top: 10px;
 	}
 
 	menu li {
@@ -148,10 +148,10 @@
 		line-height: 29px;
 	}
 
-	.main-content .waves {/* left: -540px; */overflow: visible;top: -100px;position: absolute;}
+	.main-content .waves {/* left: -130px; */overflow: hidden;top: -100px;position: absolute;}
 
 	.main-content .wave {
-		left: -1500px;
+		left: -800px;
 	}
 
 	.main-content .waves:before {
@@ -188,5 +188,16 @@
 	.main-content .wave-6 { animation: none; }
 	.main-content .wave-7 { animation: none; }
 	.main-content .wave-8 { animation: none; }
+
+	.main-content.portfolio .container:after {
+		width: 100vw;
+		left: 0;
+	}
+
+	html {
+		width: 100vw;
+		overflow-x: hidden;
+		height: initial;
+	}
 
 }
