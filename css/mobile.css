@@ -140,7 +140,7 @@
 	menu {
 		height: initial;
 		position: relative;
-		width: 100px;
+		/* width: 120px; */
 		left: 10px;
 		top: 10px;
 	}
@@ -148,6 +148,7 @@
 	menu li {
 		margin: 0 !important;
 		line-height: 29px;
+		display: block;
 	}
 
 	.main-content .waves {/* left: -130px; */overflow: hidden;top: -100px;position: absolute;}
