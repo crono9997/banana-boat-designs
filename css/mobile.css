@@ -89,7 +89,7 @@
 	}
 
 	.client-images .img-container {
-		width: calc(100% - 20px) !important;
+		width: calc(100% - 22px) !important;
 		box-sizing: border-box;
 	}
 
@@ -98,6 +98,7 @@
 
 	.main-content.photography .portrait {
 		margin: 11px;
+		width: 43%;
 	}
 
 	.img-container {
@@ -133,6 +134,7 @@
 
 	.contact .container .form {
 		height: 88px;
+		margin-right: 10px;
 	}
 
 	menu {
@@ -196,8 +198,12 @@
 
 	html {
 		width: 100vw;
-		overflow-x: hidden;
+		/*overflow-x: hidden;*/
 		height: initial;
+	}
+
+	#alert {
+		width: 90vw;
 	}
 
 }
