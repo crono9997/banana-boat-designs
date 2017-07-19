@@ -314,8 +314,9 @@
 		});
 
 		$('.img').click(function(){
+			$lightboxImg.attr('src', '');
 			var $img = $(this);
-			var backgroundImage = $img.css('background-image').replace('url("', '').replace('")', '').replace('_T.', '.').replace('T.', '.');
+			var backgroundImage = $img.css('background-image').replace('url("', '').replace('")', '').replace('url(', '').replace(')', '').replace('_T.', '.').replace('T.', '.');
 			$lightboxImg.attr('src', backgroundImage);
 			$lightbox.fadeIn();
 		});
