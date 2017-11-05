@@ -47,7 +47,7 @@
 
 .contact .container h2 {
 	color: #ffce00;
-	font-family: 'Bebas Neue', sans-serif;
+	font-family: 'bebas-neue', sans-serif;
 	font-size: 71px;
 	margin-top: 28px;
 	display: inline-block;
@@ -120,5 +120,5 @@
 	font-family: 'Rajdhani', sans-serif;
 }
 
-.resume {color: #ffce00;font-family: 'Bebas Neue', sans-serif;font-size: 24px;margin-top: 14px;display: inline-block;position: relative;letter-spacing: 1px;}
+.resume {color: #ffce00;font-family: 'bebas-neue', sans-serif;font-size: 24px;margin-top: 14px;display: inline-block;position: relative;letter-spacing: 1px;}
 

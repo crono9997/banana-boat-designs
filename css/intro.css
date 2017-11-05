@@ -7,7 +7,7 @@
 
 .intro .container h2 {
 	color: #ffce00;
-	font-family: 'Bebas Neue', sans-serif;
+	font-family: 'bebas-neue', sans-serif;
 	font-size: 71px;
 	margin-top: 28px;
 	display: block;
@@ -18,7 +18,7 @@
 .intro .container h3 {
 	color: #ffce00;
 	font-size: 27px;
-	font-family: 'Bebas Neue', sans-serif;
+	font-family: 'bebas-neue', sans-serif;
 	letter-spacing: 2.8px;
 	margin-bottom: 12px;
 }

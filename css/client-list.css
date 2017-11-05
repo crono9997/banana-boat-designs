@@ -47,7 +47,7 @@
 }
 
 .main-content.client-list .container .text strong {
-	font-family: 'Bebas Neue', sans-serif;
+	font-family: 'bebas-neue', sans-serif;
 	color: yellow;
 	font-size: 32px;
 	font-weight: 100;
@@ -56,7 +56,7 @@
 }
 
 .main-content.client-list .container .text em {
-	font-family: 'Bebas Neue', sans-serif;
+	font-family: 'bebas-neue', sans-serif;
 	font-size: 19px;
 	letter-spacing: 1px;
 	margin-left: 17px;
